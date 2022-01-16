@@ -1,0 +1,151 @@
+
+
+header{
+
+    width:100%;
+    position:sticky;/*Estatica*/
+    top:0;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:400px;/*espacio entre  la etiqueta lavel y  nav*/
+    padding:20px;
+    font-family:'Mulish';
+    background-color: burlywood;
+    z-index: 7;
+}
+
+.logo{
+    color:rgb(0, 0, 0);
+    font-size:35px;
+    padding: 0, 80px;
+    font-family: Mulish;
+    font-weight: bold;
+}
+
+a:link { /*quitar hipervinculo*/
+    text-decoration:none;
+}
+
+.navegar{
+    color:black;
+    padding:10px 30px;  
+}
+.navegar:hover{
+    color:#2937f0;
+}
+
+.btn-feedback {
+    width: 160px;
+    height: 50px;
+    background: #2937f0;
+    border-radius: 50px;
+    border: none;
+    color:white;
+    
+}
+.texto{ 
+  color:white;
+}
+
+.seccion1{/*primera seccion pantalla de inicio*/
+
+   
+    height:100vh;/* muestra la pantalla alto*/
+    width: 80%;/*ancho relativo al tamaño del padre */
+    background-color: red;
+    display:grid;
+    grid-template-columns: 1fr 1fr;/*2 columnas*/
+     margin:auto;
+  
+ 
+}
+
+.inicio{/* contenedor del primer articulo*/
+    height:70vh;
+    width:50vw;
+    background-color:aliceblue;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-content: center;
+}
+
+article h1 {
+
+  font-size: 5vw;
+}
+h1{
+    font-size:200px;
+   font-family:'newsreader';
+   margin:0;
+  
+}
+
+p{
+    font-family:'kanit';
+    color:#bcc1c4;
+    font-size:24px;
+    margin:0;
+}
+
+.cont-celular {
+
+/*no width porque ya definimos grid del mismo tamaño*/
+    background-color:aliceblue;
+    z-index: 1;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    position:relative;
+
+}
+
+.circulo{
+
+    width:90%;
+    aspect-ratio:1/1;/*cuadrado*/
+    background-color: #951de3;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    position:absolute;/*mover izqu derecha left y top*/ 
+    z-index:2;/*debajo del celular */   
+}
+
+.img-celular{
+    
+    width:60%;/*alto no especifico queda igual al de la imagen */
+    z-index:3;
+}
+
+
+.seccion2{/*segunda pantalla de notas*/
+
+    height:90vh;/* muestra la pantalla alto*/
+    display:flex ;
+    background-image: url("img/fondo.jpg");
+    background-size:cover;/*cubre el sitio sin deformarse*/
+ 
+}
+.notas{
+    height:90%;
+    width:50%;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+}
+
+.titulo-nota{
+    color:white;
+}
+
+.btn-programate{
+    background-color:transparent;
+    border: 2px solid white;
+    border-radius: 50px;
+    padding:20px;
+  
+}
