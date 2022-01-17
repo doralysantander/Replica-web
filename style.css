@@ -1,7 +1,6 @@
 
 
 header{
-
     width:100%;
     position:sticky;/*Estatica*/
     top:0;
@@ -11,7 +10,7 @@ header{
     gap:400px;/*espacio entre  la etiqueta lavel y  nav*/
     padding:20px;
     font-family:'Mulish';
-    background-color: burlywood;
+    background-color:#ffffff;
     z-index: 7;
 }
 
@@ -47,24 +46,25 @@ a:link { /*quitar hipervinculo*/
 .texto{ 
   color:white;
 }
+.container { /*no afecte el contenido del footer*/
+    display: flex;
+    flex-direction: column;
+  }
 
 .seccion1{/*primera seccion pantalla de inicio*/
-
-   
-    height:100vh;/* muestra la pantalla alto*/
+    /*height:100vh; muestra la pantalla alto*/
     width: 80%;/*ancho relativo al tamaño del padre */
-    background-color: red;
     display:grid;
     grid-template-columns: 1fr 1fr;/*2 columnas*/
-     margin:auto;
-  
- 
+    margin:auto;
+    
+   
+   
 }
 
 .inicio{/* contenedor del primer articulo*/
-    height:70vh;
-    width:50vw;
-    background-color:aliceblue;
+    
+    background-color:red;
     display:flex;
     flex-direction:column;
     justify-content: center;
@@ -92,7 +92,7 @@ p{
 .cont-celular {
 
 /*no width porque ya definimos grid del mismo tamaño*/
-    background-color:aliceblue;
+    background-color:blue;
     z-index: 1;
     display:flex;
     justify-content:center;
@@ -120,10 +120,9 @@ p{
     z-index:3;
 }
 
-
 .seccion2{/*segunda pantalla de notas*/
 
-    height:90vh;/* muestra la pantalla alto*/
+    height:100vh;/* muestra la pantalla alto*/
     display:flex ;
     background-image: url("img/fondo.jpg");
     background-size:cover;/*cubre el sitio sin deformarse*/
@@ -147,5 +146,79 @@ p{
     border: 2px solid white;
     border-radius: 50px;
     padding:20px;
+   
   
 }
+/*****************************/
+.seccion3{
+    display:grid;
+    grid-template-columns: 1fr 1fr;/*2 columnas*/
+    margin:auto;
+}
+.cont-celular2 {
+        width:50%;
+        background-color:blue;
+        z-index: 1;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        position:relative;
+    }
+    .img-celular2{
+        
+        width:60%;/*alto no especifico queda igual al de la imagen */
+        z-index:3;
+    }
+
+    .circulo2{
+
+        width:90%;
+        aspect-ratio:1/1;/*cuadrado*/
+        background-color: #951de3;
+        border-radius:50%;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        position:absolute;/*mover izqu derecha left y top*/ 
+        z-index:2;/*debajo del celular */   
+    }
+    
+   
+.iconos
+{
+    
+    display:flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+article i {
+    font-size:300%;
+}
+
+/**footer****/
+  .cont-footer{
+    width:100%;
+    padding:1rem;
+    background-color:#000000;
+    color:#EEE;
+    display:flex;
+    flex-direction:column;
+    flex-wrap:wrap;
+    justify-content:center;
+    align-items:center;
+    align-items:center;
+  
+  }
+  .contenedor-li{
+    display:flex;
+    flex-direction:row;
+  
+  }
+  ul li {
+    padding:1rem;
+    list-style-type: none;
+  }
+  
