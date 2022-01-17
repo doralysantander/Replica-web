@@ -43,14 +43,17 @@ a:link { /*quitar hipervinculo*/
     color:white;
     
 }
-.texto{ 
-  color:white;
+button a {
+    color:white;
 }
 .container { /*no afecte el contenido del footer*/
     display: flex;
     flex-direction: column;
   }
-
+section{
+    padding-top: 5%;
+    background-color:#f8f9fa;
+}
 /******** seccion1**********************/
 .seccion1{/*primera seccion pantalla de inicio*/
     /*height:100vh; muestra la pantalla alto*/
@@ -63,7 +66,7 @@ a:link { /*quitar hipervinculo*/
 
 .inicio{/* contenedor del primer articulo*/
     
-    background-color:lightslategray;
+    
     display:flex;
     flex-direction:column;
     justify-content: center;
@@ -91,7 +94,7 @@ p{
 .cont-celular {
 
 /*no width porque ya definimos grid del mismo tamaño*/
-    background-color:lightsalmon;
+
     z-index: 1;
     display:flex;
     justify-content:center;
@@ -106,7 +109,7 @@ p{
 }
 article video{
    aspect-ratio: 9/18;/*ajuste de alto al tamaño de celular*/
-   width:57%;
+    width:57%;
     z-index:3;
     position:absolute;
 }
@@ -114,7 +117,7 @@ article video{
 
     width:90%;
     aspect-ratio:1/1;/*cuadrado*/
-    background-color: #951de3;
+    background: -webkit-linear-gradient(#463AE3, #872BDC);
     border-radius:50%;
     display:flex;
     justify-content:center;
@@ -159,6 +162,7 @@ article video{
     grid-template-columns: 1fr 1fr;/*2 columnas*/
     margin:auto;
 }
+/*
 .cont-celular2 {
         z-index: 1;
         display:flex;
@@ -168,34 +172,43 @@ article video{
     }
     .img-celular2{
         
-        width:40%;/*alto no especifico queda igual al de la imagen */
-        z-index:3;
-    }
+        width:60%;/*alto no especifico queda igual al de la imagen 
+        z-index:4;
+    }*/
+
 
     .circulo2{
         width:50%;
         aspect-ratio:1/1;/*cuadrado*/
-        background-color:#512cea;
+        background: -webkit-linear-gradient(#463AE3, #872BDC);
         border-radius:50%;
         display:flex;
         position:absolute;/*mover izqu derecha left y top*/ 
         z-index:2;/*debajo del celular */   
         left:10%;
-      
    
     }
-    
    
 .iconos
-{
+{   
     display:grid;
     grid-template-columns: 1fr 1fr;/*2 columnas*/
-    margin:auto;
+    grid-template-rows: 1fr 1fr;
 }
 article i {
     font-size:300%;
-    color:#7d22e6;
+    color: #872BDC;
+   
+    
 }
+article div {
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+}
+
 
 /**footer****/
   .cont-footer{
