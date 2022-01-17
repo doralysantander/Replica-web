@@ -51,20 +51,19 @@ a:link { /*quitar hipervinculo*/
     flex-direction: column;
   }
 
+/******** seccion1**********************/
 .seccion1{/*primera seccion pantalla de inicio*/
     /*height:100vh; muestra la pantalla alto*/
     width: 80%;/*ancho relativo al tamaño del padre */
     display:grid;
     grid-template-columns: 1fr 1fr;/*2 columnas*/
     margin:auto;
-    
-   
    
 }
 
 .inicio{/* contenedor del primer articulo*/
     
-    background-color:red;
+    background-color:lightslategray;
     display:flex;
     flex-direction:column;
     justify-content: center;
@@ -92,7 +91,7 @@ p{
 .cont-celular {
 
 /*no width porque ya definimos grid del mismo tamaño*/
-    background-color:blue;
+    background-color:lightsalmon;
     z-index: 1;
     display:flex;
     justify-content:center;
@@ -100,7 +99,17 @@ p{
     position:relative;
 
 }
-
+.img-celular{
+    
+    width:60%;/*alto no especifico queda igual al de la imagen */
+    z-index:4;
+}
+article video{
+   aspect-ratio: 9/18;/*ajuste de alto al tamaño de celular*/
+   width:57%;
+    z-index:3;
+    position:absolute;
+}
 .circulo{
 
     width:90%;
@@ -114,12 +123,8 @@ p{
     z-index:2;/*debajo del celular */   
 }
 
-.img-celular{
-    
-    width:60%;/*alto no especifico queda igual al de la imagen */
-    z-index:3;
-}
 
+/******** seccion2**********************/
 .seccion2{/*segunda pantalla de notas*/
 
     height:100vh;/* muestra la pantalla alto*/
@@ -146,18 +151,15 @@ p{
     border: 2px solid white;
     border-radius: 50px;
     padding:20px;
-   
   
 }
-/*****************************/
+/***************seccion3**************/
 .seccion3{
     display:grid;
     grid-template-columns: 1fr 1fr;/*2 columnas*/
     margin:auto;
 }
 .cont-celular2 {
-        width:50%;
-        background-color:blue;
         z-index: 1;
         display:flex;
         justify-content:center;
@@ -166,36 +168,33 @@ p{
     }
     .img-celular2{
         
-        width:60%;/*alto no especifico queda igual al de la imagen */
+        width:40%;/*alto no especifico queda igual al de la imagen */
         z-index:3;
     }
 
     .circulo2{
-
-        width:90%;
+        width:50%;
         aspect-ratio:1/1;/*cuadrado*/
-        background-color: #951de3;
+        background-color:#512cea;
         border-radius:50%;
         display:flex;
-        justify-content:center;
-        align-items:center;
         position:absolute;/*mover izqu derecha left y top*/ 
         z-index:2;/*debajo del celular */   
+        left:10%;
+      
+   
     }
     
    
 .iconos
 {
-    
-    display:flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
+    display:grid;
+    grid-template-columns: 1fr 1fr;/*2 columnas*/
+    margin:auto;
 }
-
 article i {
     font-size:300%;
+    color:#7d22e6;
 }
 
 /**footer****/
