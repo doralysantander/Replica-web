@@ -1,13 +1,10 @@
-probar.addEventListener('click', e =>{
-e.preventDefault()
+let items = document.querySelectorAll(".item")
+items.forEach(item =>){
+    item.addEventListener("click",(e)=>){
+        items.forEach(item =>){
+            item.classList="item"
+        }
+    }
 
-let begin = document.getElementById('begin')
-let learning = document.getElementById('learning')
-
-window.location.replace("#pag-inicio")
-probar.setAttribute('class','new_menu')
-notes.setAttribute('class','menu')
-learning.setAttribute('class','menu')
-}) 
-
-
+    e.target.classList.toggle("active")
+}
