@@ -56,7 +56,7 @@ section{
 }
 /******** seccion1**********************/
 .seccion1{/*primera seccion pantalla de inicio*/
-    /*height:100vh; muestra la pantalla alto*/
+
     width: 80%;/*ancho relativo al tamaño del padre */
     display:grid;
     grid-template-columns: 1fr 1fr;/*2 columnas*/
@@ -65,8 +65,6 @@ section{
 }
 
 .inicio{/* contenedor del primer articulo*/
-    
-    
     display:flex;
     flex-direction:column;
     justify-content: center;
@@ -158,23 +156,11 @@ article video{
 }
 /***************seccion3**************/
 .seccion3{
+    padding-top:5%;
     display:grid;
     grid-template-columns: 1fr 1fr;/*2 columnas*/
     margin:auto;
 }
-/*
-.cont-celular2 {
-        z-index: 1;
-        display:flex;
-        justify-content:center;
-        align-items:center;
-        position:relative;
-    }
-    .img-celular2{
-        
-        width:60%;/*alto no especifico queda igual al de la imagen 
-        z-index:4;
-    }*/
 
 
     .circulo2{
@@ -186,30 +172,21 @@ article video{
         position:absolute;/*mover izqu derecha left y top*/ 
         z-index:2;/*debajo del celular */   
         left:10%;
-   
     }
    
 .iconos
 {   
     display:grid;
     grid-template-columns: 1fr 1fr;/*2 columnas*/
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows:1fr 1fr;
+   
 }
 article i {
     font-size:300%;
     color: #872BDC;
-   
+ 
     
 }
-article div {
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
-
-}
-
-
 /**footer****/
   .cont-footer{
     width:100%;
